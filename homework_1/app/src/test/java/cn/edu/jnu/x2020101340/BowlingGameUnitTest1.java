@@ -39,12 +39,17 @@ public class BowlingGameUnitTest1 {
     @Test
     public void testAStrike()
     {
-        game1.roll(10);
+        rollAStrike1();
         game1.roll(4);
         game1.roll(5);
         repeatedRoll1(0,16);
         assertEquals(28,game1.score());
     }
+
+    private void rollAStrike1() {
+        game1.roll(10);
+    }
+
     private void repeatedRoll1(int pin, int times) {
         for(int i = 0; i < times; i++) {
             game1.roll (pin);
