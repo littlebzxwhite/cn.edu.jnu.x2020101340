@@ -20,9 +20,17 @@ public class BowlingGameUnitTest1 {
         assertEquals(0, game1.score());
     }
 
+    @Test
+    public void test20Twos()
+    {
+        repeatedRoll1(2,20);
+        assertEquals(40,game1.score());
+    }
+    
     private void repeatedRoll1(int pin, int times) {
         for(int i = 0; i < times; i++) {
             game1.roll (0);
         }
     }
+
 }
