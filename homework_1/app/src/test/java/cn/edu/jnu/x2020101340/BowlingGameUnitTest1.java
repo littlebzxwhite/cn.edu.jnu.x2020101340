@@ -43,6 +43,7 @@ public class BowlingGameUnitTest1 {
     private void rollASpare1() {
         game1.roll(3);
         game1.roll(7);
+        
     }
 
 
