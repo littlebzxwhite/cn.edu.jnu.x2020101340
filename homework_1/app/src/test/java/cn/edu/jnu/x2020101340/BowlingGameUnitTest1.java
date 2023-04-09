@@ -16,9 +16,13 @@ public class BowlingGameUnitTest1 {
     @Test
     public void test20Zeros()
     {
-        for(int i = 0; i < 20; i++) {
+        repeatedRoll1(0,20);
+        assertEquals(0, game1.score());
+    }
+
+    private void repeatedRoll1(int pin, int times) {
+        for(int i = 0; i < times; i++) {
             game1.roll (0);
         }
-        assertEquals(0, game1.score());
     }
 }
