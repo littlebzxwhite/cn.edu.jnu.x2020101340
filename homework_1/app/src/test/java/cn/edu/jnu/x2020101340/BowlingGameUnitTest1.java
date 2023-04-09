@@ -35,6 +35,16 @@ public class BowlingGameUnitTest1 {
         repeatedRoll1(0,17);
         assertEquals(24,game1.score());
     }
+
+    @Test
+    public void testAStrike()
+    {
+        game1.roll(10);
+        game1.roll(4);
+        game1.roll(5);
+        repeatedRoll1(0,16);
+        assertEquals(28,game1.score());
+    }
     private void repeatedRoll1(int pin, int times) {
         for(int i = 0; i < times; i++) {
             game1.roll (pin);
@@ -43,7 +53,6 @@ public class BowlingGameUnitTest1 {
     private void rollASpare1() {
         game1.roll(3);
         game1.roll(7);
-        
     }
 
 
