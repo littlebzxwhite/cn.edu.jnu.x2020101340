@@ -50,7 +50,7 @@ public class BowlingGameUnitTest1 {
     public void testFullStrike()
     {
         repeatedRoll1(10,12);
-        assertEquals(300,game1.score()); 
+        assertEquals(300,game1.score());
     }
 
     private void rollAStrike1() {
